@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - 5 Star Experience</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="headline">Thank you! We're thrilled you had a 5-star experience.</h1>
+        <div class="button-container">
+            <a href="#" id="google-review-link" class="review-button five-star">
+                Leave a Google Review
+            </a>
+            <a href="#" id="video-testimonial-link" class="review-button one-to-four-star">
+                Submit a Quick Video Testimonial (Get Rewarded!)
+            </a>
+        </div>
+        <div id="client-id-display" style="margin-top: 30px; font-size: 0.9rem; color: #7f8c8d; font-style: italic;"></div>
+    </div>
+    <script>
+        // Function to get URL parameter by name
+        function getUrlParameter(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
+
+        // Wait for DOM to be fully loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get the client parameter from the URL
+            const clientParam = getUrlParameter('client');
+            const clientIdDisplay = document.getElementById('client-id-display');
+            
+            // Display client ID if it exists
+            if (clientParam) {
+                clientIdDisplay.textContent = 'Client ID: ' + clientParam;
+            } else {
+                clientIdDisplay.textContent = 'Client ID: (not provided)';
+            }
+        });
+    </script>
+</body>
+</html>
+
