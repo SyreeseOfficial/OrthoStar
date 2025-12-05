@@ -55,7 +55,7 @@ async function loadGoogleLink() {
         
         // Airtable API configuration
         const airtableBaseId = 'appmmOqQKtbTOTawQ';
-        const airtableToken = 'patVwfGz4Q4POtwJH.a4087fd992a89dac77998f14e8a2789f9bf5902c161a7b4ca095fdb8d0078e0a';
+        const airtableToken = '[Placeholder]';
         const tableName = 'Client Configuration';
         
         // Build the filter formula: {A Client ID}='[client_id]'
