@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>How was your experience? - OrthoStar</title>
+    <title>Thank you! - OrthoStar</title>
     <style>
         :root {
             --bg-dark: #17181C;
@@ -12,6 +12,7 @@
             --accent-hover: #7E8EF6;
             --border-subtle: #3C3D42;
             --text-secondary: #A0A4B8;
+            --success-green: #38A169;
         }
 
         * {
@@ -53,9 +54,16 @@
         h1 {
             font-size: 3rem;
             font-weight: 700;
-            margin-bottom: 3rem;
+            margin-bottom: 1.5rem;
             color: var(--text-light);
             letter-spacing: -0.02em;
+        }
+
+        p {
+            font-size: 1.125rem;
+            color: var(--success-green);
+            margin-bottom: 3rem;
+            font-weight: 400;
         }
 
         .button-group {
@@ -93,19 +101,25 @@
 
         .btn-secondary {
             background-color: transparent;
-            color: var(--text-secondary);
-            border: 1px solid var(--border-subtle);
+            color: var(--accent-indigo);
+            border: 1px solid var(--accent-indigo);
         }
 
         .btn-secondary:hover {
-            border-color: var(--accent-indigo);
-            color: var(--accent-indigo);
+            background-color: var(--accent-indigo);
+            color: var(--text-light);
             transform: translateY(-2px);
+            box-shadow: 0 4px 16px rgba(94, 106, 210, 0.3);
         }
 
         @media (max-width: 640px) {
             h1 {
                 font-size: 2rem;
+                margin-bottom: 1rem;
+            }
+
+            p {
+                font-size: 1rem;
                 margin-bottom: 2rem;
             }
 
@@ -118,10 +132,11 @@
 </head>
 <body>
     <div class="container">
-        <h1>How was your experience?</h1>
+        <h1>Thank you!</h1>
+        <p>We're thrilled you had a 5-star experience.</p>
         <div class="button-group">
-            <a href="thank_you.html" class="btn btn-primary">5 Stars (Great)</a>
-            <a href="https://tally.so/r/44QBXo" target="_blank" class="btn btn-secondary">1-4 Stars (Needs Improvement)</a>
+            <a href="https://www.google.com/search?sca_esv=f6c5c1db6cdc7d38&sxsrf=AE3TifOzvVyujnpBCic2LtrpBZw16DAEQg:1765038206745&si=AMgyJEuzsz2NflaaWzrzdpjxXXRaJ2hfdMsbe_mSWso6src8s8gy2yWh6U3VGCH5MyJHNrR8O9Bp49LjKKkEJM-dz3h7k1EFEl_4E7x3Plu7GE96rE72ySgxNSe3yfnDvz9CIPCn597qwGB43mA32_o5IzKb0mZYXw%3D%3D&q=Bastian+Orthodontics+Reviews&sa=X&ved=2ahUKEwiV1M_ar6mRAxU9BzQIHaIDHmkQ0bkNegQIJhAE&biw=1830&bih=987&dpr=1.25#lrd=0x54900678458d8955:0x8d3c758de80ac99e,3,,,," target="_blank" class="btn btn-primary">Leave a Google Review</a>
+            <a href="https://tally.so/r/jaZba9" target="_blank" class="btn btn-secondary">Submit a 10 Second Video Testimonial (Get Rewarded!)</a>
         </div>
     </div>
 </body>

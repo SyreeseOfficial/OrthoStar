@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank you! - OrthoStar</title>
+    <style>
+        :root {
+            --bg-dark: #17181C;
+            --text-light: #F4F5F8;
+            --accent-indigo: #5E6AD2;
+            --accent-hover: #7E8EF6;
+            --border-subtle: #3C3D42;
+            --text-secondary: #A0A4B8;
+            --success-green: #38A169;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            line-height: 1.6;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 600px;
+            width: 100%;
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: var(--text-light);
+            letter-spacing: -0.02em;
+        }
+
+        p {
+            font-size: 1.125rem;
+            color: var(--success-green);
+            margin-bottom: 3rem;
+            font-weight: 400;
+        }
+
+        .button-group {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            font-weight: 500;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.2s ease-out;
+            cursor: pointer;
+            border: none;
+            font-family: inherit;
+            letter-spacing: -0.01em;
+        }
+
+        .btn-primary {
+            background-color: var(--accent-indigo);
+            color: var(--text-light);
+            box-shadow: 0 4px 16px rgba(94, 106, 210, 0.3);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--accent-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 24px rgba(94, 106, 210, 0.4);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--accent-indigo);
+            border: 1px solid var(--accent-indigo);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--accent-indigo);
+            color: var(--text-light);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 16px rgba(94, 106, 210, 0.3);
+        }
+
+        @media (max-width: 640px) {
+            h1 {
+                font-size: 2rem;
+                margin-bottom: 1rem;
+            }
+
+            p {
+                font-size: 1rem;
+                margin-bottom: 2rem;
+            }
+
+            .btn {
+                padding: 0.875rem 1.5rem;
+                font-size: 0.9375rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Thank you!</h1>
+        <p>We're thrilled you had a 5-star experience.</p>
+        <div class="button-group">
+            <a href="https://www.google.com/search?sca_esv=f6c5c1db6cdc7d38&sxsrf=AE3TifOzvVyujnpBCic2LtrpBZw16DAEQg:1765038206745&si=AMgyJEuzsz2NflaaWzrzdpjxXXRaJ2hfdMsbe_mSWso6src8s8gy2yWh6U3VGCH5MyJHNrR8O9Bp49LjKKkEJM-dz3h7k1EFEl_4E7x3Plu7GE96rE72ySgxNSe3yfnDvz9CIPCn597qwGB43mA32_o5IzKb0mZYXw%3D%3D&q=Bastian+Orthodontics+Reviews&sa=X&ved=2ahUKEwiV1M_ar6mRAxU9BzQIHaIDHmkQ0bkNegQIJhAE&biw=1830&bih=987&dpr=1.25#lrd=0x54900678458d8955:0x8d3c758de80ac99e,3,,,," target="_blank" class="btn btn-primary">Leave a Google Review</a>
+            <a href="https://tally.so/r/jaZba9" target="_blank" class="btn btn-secondary">Submit a 10 Second Video Testimonial (Get Rewarded!)</a>
+        </div>
+    </div>
+</body>
+</html>
+
