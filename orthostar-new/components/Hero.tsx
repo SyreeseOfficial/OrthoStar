@@ -23,9 +23,9 @@ export const Hero: React.FC<HeroProps> = ({ onOpenDemo }) => {
           </div>
 
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white tracking-tight leading-tight mb-6">
-            The Definitive Engine For <br />
+            Bad Reviews are Killing Your Practice. <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-300 to-brand-500 text-glow">
-              Orthodontic Growth
+              Stop It Now.
             </span>
           </h1>
 
