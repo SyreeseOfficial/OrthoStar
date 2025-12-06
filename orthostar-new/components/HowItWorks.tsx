@@ -5,18 +5,18 @@ export const HowItWorks: React.FC = () => {
   const steps = [
     {
       icon: <QrCode size={32} />,
-      title: "Provisioning",
-      desc: "We generate a unique QR code for your clinic. Place it at the front desk or on checkout cards. No tech integration required."
+      title: "Speed",
+      desc: "Start in 30 Minutes. Stop worrying about IT. We send you the QR code. You print it. Done."
     },
     {
       icon: <Sliders size={32} />,
-      title: "Filtration & Capture",
-      desc: "Patients scan and rate. 5-stars go to Google/Video. 1-4 stars go to a private form. You get the best, we hide the rest."
+      title: "Lock Down Good Reviews",
+      desc: "Guarantee 5-Stars. Block bad reviews instantly. Happy patients go to Google. Unhappy patients go to a private form. Your rating stays perfect."
     },
     {
       icon: <Share2 size={32} />,
-      title: "Distribution",
-      desc: "OrthoStar validates video content and assists in distribution to your social channels. Watch your rankings climb."
+      title: "Rank Higher",
+      desc: "Build Clinic Authority. Tired of low rankings? We check the videos and post them fast. Be the top-rated clinic online."
     }
   ];
 
@@ -24,8 +24,8 @@ export const HowItWorks: React.FC = () => {
     <section id="how-it-works" className="py-24 bg-slate-900 border-y border-white/5">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Seamless Integration In Three Steps</h2>
-          <p className="text-slate-400">From setup to first review in under 24 hours.</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Easy Setup In Three Steps</h2>
+          <p className="text-slate-400">From setup to first review in under 30 minutes.</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 relative">

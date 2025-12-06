@@ -5,19 +5,19 @@ const testimonials = [
   {
     name: "Dr. Sarah Miller",
     clinic: "Miller Orthodontics",
-    text: "We captured 12 video testimonials in the first week. The filtration logic saved us from two potential negative reviews that we resolved privately.",
+    text: "We got 5-star reviews the first week. Then we started gettings lots of video testimonials.",
     location: "Austin, TX"
   },
   {
     name: "Dr. James Chen",
     clinic: "Align & Smile",
-    text: "OrthoStar is the only tool that actually understands the aesthetic practice workflow. It's completely hands-off for my front desk.",
-    location: "Seattle, WA"
+    text: "OrthoStar makes getting reviews easy. It's nice that none of the lower review ever get posted to Google too.",
+    location: "Great Falls, MT"
   },
   {
     name: "Elena Rodriguez",
     clinic: "Bright Future Ortho",
-    text: "Our Google rating moved from 4.6 to 4.9 in three months. The video assets are gold for our Instagram ads.",
+    text: "Our Google rating moved from 4.6 to 4.9 in three months. The video reviews are gold for our Instagram ads.",
     location: "Miami, FL"
   }
 ];
@@ -26,7 +26,7 @@ export const Testimonials: React.FC = () => {
   return (
     <section className="py-24 bg-slate-950 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
-        <h2 className="text-3xl font-bold text-white text-center mb-16">Trusted by Top Practices</h2>
+        <h2 className="text-3xl font-bold text-white text-center mb-16">Trusted by Top Orthodontists</h2>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {testimonials.map((t, i) => (

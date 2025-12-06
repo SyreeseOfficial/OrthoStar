@@ -14,7 +14,7 @@ export const Footer: React.FC = () => {
               <span className="font-bold text-white">OrthoStar</span>
             </div>
             <p className="text-sm text-slate-500">
-              The definitive engine for orthodontic clinic growth and reputation management.
+              Block Bad Reviews. Get New Patients.
             </p>
           </div>
           
@@ -48,7 +48,7 @@ export const Footer: React.FC = () => {
         
         <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-600">
           <p>© 2025 OrthoStar, LLC. All rights reserved.</p>
-          <p>123 Innovation Dr, Austin, TX 78701</p>
+          <p>16817 Larch Way, Lynnwood, WA 98037</p>
         </div>
       </div>
     </footer>
