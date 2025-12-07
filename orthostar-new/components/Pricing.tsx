@@ -32,7 +32,7 @@ export const Pricing: React.FC<PricingProps> = ({ onOpenDemo }) => {
           {/* Pricing Card */}
           <div className="lg:w-1/2 w-full">
             <div className="relative p-1 rounded-2xl bg-gradient-to-b from-white/10 to-transparent">
-              <div className="bg-slate-950 rounded-xl p-8 md:p-12 relative overflow-hidden">
+              <div className="bg-gradient-to-b from-slate-900 to-slate-950 rounded-xl p-8 md:p-12 relative overflow-hidden shadow-2xl shadow-black/40">
                 <div className="absolute top-0 right-0 p-4">
                   <span className="bg-brand-accent text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Most Popular</span>
                 </div>

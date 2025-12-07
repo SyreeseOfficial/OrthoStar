@@ -6,12 +6,12 @@ export const Features: React.FC = () => {
   return (
     <section id="features" className="py-24 bg-slate-950 relative">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
-        
+
         {/* Pain Points Bento Grid */}
         <div className="mb-32">
           <div className="text-center mb-16">
-             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Your Review System is Broken</h2>
-             <p className="text-slate-400 max-w-2xl mx-auto">Stop losing money to bad reviews. Stop wasting staff time.</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Your Review System is Broken</h2>
+            <p className="text-slate-400 max-w-2xl mx-auto">Stop losing money to bad reviews. Stop wasting staff time.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -75,25 +75,25 @@ export const Features: React.FC = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="p-6 rounded-2xl bg-slate-900 border border-white/5 hover:border-brand-accent/50 transition-all duration-300">
+            <div className="p-6 rounded-2xl bg-gradient-to-br from-slate-900 to-slate-950 border border-white/5 shadow-lg shadow-black/20 hover:border-brand-accent/50 transition-all duration-300">
               <Video className="text-brand-accent mb-4" size={32} />
               <h4 className="text-lg font-semibold text-white mb-2">Get Videos Automatically</h4>
               <p className="text-sm text-slate-400">Get a never-ending stream of real, high-quality patient videos. We post them to grow your clinic.</p>
             </div>
 
-            <div className="p-6 rounded-2xl bg-slate-900 border border-white/5 hover:border-brand-accent/50 transition-all duration-300">
+            <div className="p-6 rounded-2xl bg-gradient-to-br from-slate-900 to-slate-950 border border-white/5 shadow-lg shadow-black/20 hover:border-brand-accent/50 transition-all duration-300">
               <ShieldCheck className="text-brand-accent mb-4" size={32} />
               <h4 className="text-lg font-semibold text-white mb-2">Block All Bad Reviews Guaranteed</h4>
               <p className="text-sm text-slate-400">We capture all negative feedback privately. 1-4 star reviews never go public.</p>
             </div>
 
-            <div className="p-6 rounded-2xl bg-slate-900 border border-white/5 hover:border-brand-accent/50 transition-all duration-300">
+            <div className="p-6 rounded-2xl bg-gradient-to-br from-slate-900 to-slate-950 border border-white/5 shadow-lg shadow-black/20 hover:border-brand-accent/50 transition-all duration-300">
               <Gift className="text-brand-accent mb-4" size={32} />
               <h4 className="text-lg font-semibold text-white mb-2">Guaranteed Submissions</h4>
               <p className="text-sm text-slate-400">Use our simple plan. It is proven to get you the most videos and 5-star reviews possible.</p>
             </div>
 
-            <div className="p-6 rounded-2xl bg-slate-900 border border-white/5 hover:border-brand-accent/50 transition-all duration-300">
+            <div className="p-6 rounded-2xl bg-gradient-to-br from-slate-900 to-slate-950 border border-white/5 shadow-lg shadow-black/20 hover:border-brand-accent/50 transition-all duration-300">
               <TrendingUp className="text-brand-accent mb-4" size={32} />
               <h4 className="text-lg font-semibold text-white mb-2">Hands-Off Growth</h4>
               <p className="text-sm text-slate-400">No staff training needed. The system does the work for you. Just watch your clinic grow.</p>
