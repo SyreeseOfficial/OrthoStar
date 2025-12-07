@@ -19,22 +19,22 @@ export const Header: React.FC<HeaderProps> = ({ onOpenDemo }) => {
   }, []);
 
   const navLinks = [
-    { label: 'How It Works', href: '#how-it-works' },
-    { label: 'Features', href: '#features' },
-    { label: 'Pricing', href: '#pricing' },
-    { label: 'FAQ', href: '#faq' },
+    { label: 'How It Works', href: '/index.html#how-it-works' },
+    { label: 'Features', href: '/index.html#features' },
+    { label: 'Pricing', href: '/index.html#pricing' },
+    { label: 'FAQ', href: '/index.html#faq' },
   ];
 
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 border-b ${isScrolled
-          ? 'bg-slate-950/80 backdrop-blur-xl border-white/10 py-3'
-          : 'bg-transparent border-transparent py-6'
+        ? 'bg-slate-950/80 backdrop-blur-xl border-white/10 py-3'
+        : 'bg-transparent border-transparent py-6'
         }`}
     >
       <div className="max-w-7xl mx-auto px-4 md:px-6 flex items-center justify-between">
         {/* Logo */}
-        <a href="#" className="flex items-center gap-2 group">
+        <a href="/index.html" className="flex items-center gap-2 group">
           <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-brand-400 to-brand-600 flex items-center justify-center text-white shadow-lg group-hover:shadow-brand-500/50 transition-all">
             <Star size={16} fill="currentColor" className="text-white" />
           </div>

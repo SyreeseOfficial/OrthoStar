@@ -23,6 +23,7 @@ const App: React.FC = () => {
 
         <Routes>
           <Route path="/" element={<Home onOpenDemo={openDemo} />} />
+          <Route path="/index.html" element={<Home onOpenDemo={openDemo} />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/terms" element={<Terms />} />
           <Route path="/hipaa-compliance" element={<HipaaCompliance />} />
