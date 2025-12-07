@@ -1,6 +1,7 @@
 import React from 'react';
 import { AlertTriangle, TrendingUp, Users, Video, ShieldCheck, Gift, Activity } from 'lucide-react';
 import { Counter } from './ui/Counter';
+import { Reveal } from './ui/Reveal';
 
 export const Features: React.FC = () => {
   return (
@@ -15,35 +16,41 @@ export const Features: React.FC = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="glass-panel p-8 rounded-2xl group hover:bg-white/5 transition-colors">
-              <div className="w-12 h-12 rounded-lg bg-red-500/10 flex items-center justify-center text-red-500 mb-6 group-hover:scale-110 transition-transform">
-                <AlertTriangle />
+            <Reveal delay={0.1}>
+              <div className="glass-panel p-8 rounded-2xl group hover:bg-white/5 transition-colors">
+                <div className="w-12 h-12 rounded-lg bg-red-500/10 flex items-center justify-center text-red-500 mb-6 group-hover:scale-110 transition-transform">
+                  <AlertTriangle />
+                </div>
+                <h3 className="text-xl font-semibold text-white mb-3">Public Damage</h3>
+                <p className="text-slate-400 leading-relaxed">
+                  Bad Reviews Are Costing You Money. One bad 1-star review on Google costs you thousands in lost new patients.
+                </p>
               </div>
-              <h3 className="text-xl font-semibold text-white mb-3">Public Damage</h3>
-              <p className="text-slate-400 leading-relaxed">
-                Bad Reviews Are Costing You Money. One bad 1-star review on Google costs you thousands in lost new patients.
-              </p>
-            </div>
+            </Reveal>
 
-            <div className="glass-panel p-8 rounded-2xl group hover:bg-white/5 transition-colors">
-              <div className="w-12 h-12 rounded-lg bg-orange-500/10 flex items-center justify-center text-orange-500 mb-6 group-hover:scale-110 transition-transform">
-                <Users />
+            <Reveal delay={0.2}>
+              <div className="glass-panel p-8 rounded-2xl group hover:bg-white/5 transition-colors">
+                <div className="w-12 h-12 rounded-lg bg-orange-500/10 flex items-center justify-center text-orange-500 mb-6 group-hover:scale-110 transition-transform">
+                  <Users />
+                </div>
+                <h3 className="text-xl font-semibold text-white mb-3">Weak Marketing</h3>
+                <p className="text-slate-400 leading-relaxed">
+                  No Videos, No Growth. You have zero real video proof from happy patients. Your marketing looks weak and fake.
+                </p>
               </div>
-              <h3 className="text-xl font-semibold text-white mb-3">Weak Marketing</h3>
-              <p className="text-slate-400 leading-relaxed">
-                No Videos, No Growth. You have zero real video proof from happy patients. Your marketing looks weak and fake.
-              </p>
-            </div>
+            </Reveal>
 
-            <div className="glass-panel p-8 rounded-2xl group hover:bg-white/5 transition-colors">
-              <div className="w-12 h-12 rounded-lg bg-blue-500/10 flex items-center justify-center text-blue-500 mb-6 group-hover:scale-110 transition-transform">
-                <Activity />
+            <Reveal delay={0.3}>
+              <div className="glass-panel p-8 rounded-2xl group hover:bg-white/5 transition-colors">
+                <div className="w-12 h-12 rounded-lg bg-blue-500/10 flex items-center justify-center text-blue-500 mb-6 group-hover:scale-110 transition-transform">
+                  <Activity />
+                </div>
+                <h3 className="text-xl font-semibold text-white mb-3">Staff Burnout</h3>
+                <p className="text-slate-400 leading-relaxed">
+                  Staff Time is Wasted. Your team wastes time chasing reviews. They should be focused on patient care, not busy work.
+                </p>
               </div>
-              <h3 className="text-xl font-semibold text-white mb-3">Staff Burnout</h3>
-              <p className="text-slate-400 leading-relaxed">
-                Staff Time is Wasted. Your team wastes time chasing reviews. They should be focused on patient care, not busy work.
-              </p>
-            </div>
+            </Reveal>
           </div>
         </div>
 
@@ -75,29 +82,37 @@ export const Features: React.FC = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="p-6 rounded-2xl bg-gradient-to-br from-slate-900 to-slate-950 border border-white/5 shadow-lg shadow-black/20 hover:border-brand-accent/50 transition-all duration-300">
-              <Video className="text-brand-accent mb-4" size={32} />
-              <h4 className="text-lg font-semibold text-white mb-2">Get Videos Automatically</h4>
-              <p className="text-sm text-slate-400">Get a never-ending stream of real, high-quality patient videos. We post them to grow your clinic.</p>
-            </div>
+            <Reveal delay={0.1}>
+              <div className="p-6 rounded-2xl bg-gradient-to-br from-slate-900 to-slate-950 border border-white/5 shadow-lg shadow-black/20 hover:border-brand-accent/50 transition-all duration-300 hover:-translate-y-1">
+                <Video className="text-brand-accent mb-4" size={32} />
+                <h4 className="text-lg font-semibold text-white mb-2">Get Videos Automatically</h4>
+                <p className="text-sm text-slate-400">Get a never-ending stream of real, high-quality patient videos. We post them to grow your clinic.</p>
+              </div>
+            </Reveal>
 
-            <div className="p-6 rounded-2xl bg-gradient-to-br from-slate-900 to-slate-950 border border-white/5 shadow-lg shadow-black/20 hover:border-brand-accent/50 transition-all duration-300">
-              <ShieldCheck className="text-brand-accent mb-4" size={32} />
-              <h4 className="text-lg font-semibold text-white mb-2">Block All Bad Reviews Guaranteed</h4>
-              <p className="text-sm text-slate-400">We capture all negative feedback privately. 1-4 star reviews never go public.</p>
-            </div>
+            <Reveal delay={0.2}>
+              <div className="p-6 rounded-2xl bg-gradient-to-br from-slate-900 to-slate-950 border border-white/5 shadow-lg shadow-black/20 hover:border-brand-accent/50 transition-all duration-300 hover:-translate-y-1">
+                <ShieldCheck className="text-brand-accent mb-4" size={32} />
+                <h4 className="text-lg font-semibold text-white mb-2">Block All Bad Reviews Guaranteed</h4>
+                <p className="text-sm text-slate-400">We capture all negative feedback privately. 1-4 star reviews never go public.</p>
+              </div>
+            </Reveal>
 
-            <div className="p-6 rounded-2xl bg-gradient-to-br from-slate-900 to-slate-950 border border-white/5 shadow-lg shadow-black/20 hover:border-brand-accent/50 transition-all duration-300">
-              <Gift className="text-brand-accent mb-4" size={32} />
-              <h4 className="text-lg font-semibold text-white mb-2">Guaranteed Submissions</h4>
-              <p className="text-sm text-slate-400">Use our simple plan. It is proven to get you the most videos and 5-star reviews possible.</p>
-            </div>
+            <Reveal delay={0.3}>
+              <div className="p-6 rounded-2xl bg-gradient-to-br from-slate-900 to-slate-950 border border-white/5 shadow-lg shadow-black/20 hover:border-brand-accent/50 transition-all duration-300 hover:-translate-y-1">
+                <Gift className="text-brand-accent mb-4" size={32} />
+                <h4 className="text-lg font-semibold text-white mb-2">Guaranteed Submissions</h4>
+                <p className="text-sm text-slate-400">Use our simple plan. It is proven to get you the most videos and 5-star reviews possible.</p>
+              </div>
+            </Reveal>
 
-            <div className="p-6 rounded-2xl bg-gradient-to-br from-slate-900 to-slate-950 border border-white/5 shadow-lg shadow-black/20 hover:border-brand-accent/50 transition-all duration-300">
-              <TrendingUp className="text-brand-accent mb-4" size={32} />
-              <h4 className="text-lg font-semibold text-white mb-2">Hands-Off Growth</h4>
-              <p className="text-sm text-slate-400">No staff training needed. The system does the work for you. Just watch your clinic grow.</p>
-            </div>
+            <Reveal delay={0.4}>
+              <div className="p-6 rounded-2xl bg-gradient-to-br from-slate-900 to-slate-950 border border-white/5 shadow-lg shadow-black/20 hover:border-brand-accent/50 transition-all duration-300 hover:-translate-y-1">
+                <TrendingUp className="text-brand-accent mb-4" size={32} />
+                <h4 className="text-lg font-semibold text-white mb-2">Hands-Off Growth</h4>
+                <p className="text-sm text-slate-400">No staff training needed. The system does the work for you. Just watch your clinic grow.</p>
+              </div>
+            </Reveal>
           </div>
         </div>
 

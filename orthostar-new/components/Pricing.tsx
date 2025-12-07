@@ -1,6 +1,7 @@
 import React from 'react';
 import { Check, ShieldCheck } from 'lucide-react';
 import { Button } from './ui/Button';
+import { Reveal } from './ui/Reveal';
 
 interface PricingProps {
   onOpenDemo: () => void;
@@ -31,35 +32,37 @@ export const Pricing: React.FC<PricingProps> = ({ onOpenDemo }) => {
 
           {/* Pricing Card */}
           <div className="lg:w-1/2 w-full">
-            <div className="relative p-1 rounded-2xl bg-gradient-to-b from-white/10 to-transparent">
-              <div className="bg-gradient-to-b from-slate-900 to-slate-950 rounded-xl p-8 md:p-12 relative overflow-hidden shadow-2xl shadow-black/40">
-                <div className="absolute top-0 right-0 p-4">
-                  <span className="bg-brand-accent text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Most Popular</span>
-                </div>
+            <Reveal delay={0.2}>
+              <div className="relative p-1 rounded-2xl bg-gradient-to-b from-white/10 to-transparent transition-transform hover:-translate-y-1 duration-500">
+                <div className="bg-gradient-to-b from-slate-900 to-slate-950 rounded-xl p-8 md:p-12 relative overflow-hidden shadow-2xl shadow-black/40">
+                  <div className="absolute top-0 right-0 p-4">
+                    <span className="bg-brand-accent text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Most Popular</span>
+                  </div>
 
-                <h3 className="text-xl font-medium text-slate-400 mb-2">Orthodontist Clinic</h3>
-                <div className="flex items-baseline gap-1 mb-8">
-                  <span className="text-5xl font-bold text-white">$299</span>
-                  <span className="text-slate-500">/month</span>
-                </div>
+                  <h3 className="text-xl font-medium text-slate-400 mb-2">Orthodontist Clinic</h3>
+                  <div className="flex items-baseline gap-1 mb-8">
+                    <span className="text-5xl font-bold text-white">$299</span>
+                    <span className="text-slate-500">/month</span>
+                  </div>
 
-                <div className="space-y-4 mb-10">
-                  {['Unlimited Review Requests', 'Video Testimonial Hosting', 'Private Feedback Dashboard', 'Social Media Asset Generation', 'Concierge Onboarding', 'Priority Support'].map((feat) => (
-                    <div key={feat} className="flex items-center gap-3">
-                      <div className="w-5 h-5 rounded-full bg-brand-accent/20 flex items-center justify-center text-brand-accent shrink-0">
-                        <Check size={12} strokeWidth={3} />
+                  <div className="space-y-4 mb-10">
+                    {['Unlimited Review Requests', 'Video Testimonial Hosting', 'Private Feedback Dashboard', 'Social Media Asset Generation', 'Concierge Onboarding', 'Priority Support'].map((feat) => (
+                      <div key={feat} className="flex items-center gap-3">
+                        <div className="w-5 h-5 rounded-full bg-brand-accent/20 flex items-center justify-center text-brand-accent shrink-0">
+                          <Check size={12} strokeWidth={3} />
+                        </div>
+                        <span className="text-slate-300 text-sm">{feat}</span>
                       </div>
-                      <span className="text-slate-300 text-sm">{feat}</span>
-                    </div>
-                  ))}
-                </div>
+                    ))}
+                  </div>
 
-                <Button href="https://calendly.com/syreeseofficial/short-chat" target="_blank" size="lg" className="w-full text-center justify-center">
-                  Start Your 30-Day Free Trial
-                </Button>
-                <p className="text-center text-xs text-slate-500 mt-4">No credit card required.</p>
+                  <Button href="https://calendly.com/syreeseofficial/short-chat" target="_blank" size="lg" className="w-full text-center justify-center">
+                    Start Your 30-Day Free Trial
+                  </Button>
+                  <p className="text-center text-xs text-slate-500 mt-4">No credit card required.</p>
+                </div>
               </div>
-            </div>
+            </Reveal>
           </div>
 
         </div>
