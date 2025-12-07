@@ -54,7 +54,7 @@ export const Pricing: React.FC<PricingProps> = ({ onOpenDemo }) => {
                   ))}
                 </div>
 
-                <Button onClick={onOpenDemo} size="lg" className="w-full text-center justify-center">
+                <Button href="https://calendly.com/syreeseofficial/short-chat" target="_blank" size="lg" className="w-full text-center justify-center">
                   Start Your 30-Day Free Trial
                 </Button>
                 <p className="text-center text-xs text-slate-500 mt-4">No credit card required.</p>

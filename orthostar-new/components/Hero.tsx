@@ -34,7 +34,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenDemo }) => {
           </h2>
 
           <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
-            <Button onClick={onOpenDemo} size="lg" className="w-full sm:w-auto">
+            <Button href="https://calendly.com/syreeseofficial/short-chat" target="_blank" size="lg" className="w-full sm:w-auto">
               Book A Live Demo
             </Button>
             <Button variant="secondary" size="lg" className="w-full sm:w-auto" onClick={() => document.getElementById('how-it-works')?.scrollIntoView({ behavior: 'smooth' })}>
@@ -75,7 +75,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenDemo }) => {
                 <div className="h-[46px] w-[3px] bg-gray-800 absolute -right-[10px] top-[142px] rounded-r-lg"></div>
                 <div className="flex-1 bg-white flex flex-col items-center justify-center p-4 text-center">
                   <div className="w-12 h-12 bg-slate-100 rounded-full mb-4 flex items-center justify-center">
-                    <span className="font-bold text-slate-800">Ortho</span>
+                    <span className="font-bold text-slate-800">Max</span>
                   </div>
                   <h4 className="text-slate-800 font-bold text-sm mb-2">How was your visit?</h4>
                   <div className="flex gap-1 mb-6">
@@ -96,13 +96,13 @@ export const Hero: React.FC<HeroProps> = ({ onOpenDemo }) => {
                     5-Star Logic
                   </h3>
                   <p className="text-sm text-slate-400">
-                    Perfect scores are instantly routed to your Google Business Profile or prompted to record a video testimonial for a reward.
+                    Get It All. Perfect scores go straight to Google. Happy patients are asked to record a video for a reward. You win every time.
                   </p>
                 </div>
                 <div className="glass-panel p-6 rounded-xl border-l-4 border-slate-600 opacity-60">
                   <h3 className="text-slate-200 font-semibold mb-2">1-4 Star Logic</h3>
                   <p className="text-sm text-slate-400">
-                    Sub-optimal experiences are routed to a private internal feedback form. The public never sees them.
+                    Blocked. All lower ratings are instantly sent to a private form. The public never sees a bad review.
                   </p>
                 </div>
               </div>
