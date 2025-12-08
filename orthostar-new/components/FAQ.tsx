@@ -4,23 +4,39 @@ import { ChevronDown, ChevronUp } from 'lucide-react';
 const faqs = [
   {
     question: "Will this get me into HIPAA trouble?",
-    answer: "No. We only use contact data. Your patient data is safe and private."
+    answer: "No. We only use contact info, not health details. Your patient data is always private and safe."
   },
   {
     question: "How do I guarantee I get video testimonials?",
-    answer: "Use a small $5 gift card. This formula gets 184% more videos."
+    answer: "Use a small gift card, like $5. This simple trick gets us almost twice as many video reviews."
   },
   {
-    question: "I don't have time. How fast can we start blocking bad reviews?",
-    answer: "30 minutes. We build it for you. Just print the code and start."
+    question: "I don't have time. How fast can we block bad reviews?",
+    answer: "30 minutes. We build it for you. You just print the simple code and start right away."
   },
   {
     question: "Is filtering reviews safe or legal?",
-    answer: "100% Yes. You are simply sending happy patients to public sites, and unhappy patients to a private form. It is smart, not risky."
+    answer: "Yes, 100%. We just send happy patients to Google and unhappy ones to a private form. It is smart, not risky."
   },
   {
     question: "I don't have staff to manage this. Does it run itself?",
-    answer: "Yes. It is set-and-forget. It just works while you treat patients."
+    answer: "Yes. It is 'set-and-forget.' It works all the time while your team focuses only on treating patients."
+  },
+  {
+    question: "What is the average profit (ROI) OrthoStar users make?",
+    answer: "Our users often get new patients and spend much less on ads. We turn the cost into a clear profit."
+  },
+  {
+    question: "Are there different pricing plans, or is the price always the same?",
+    answer: "The service is a clear, flat monthly rate. There are no hidden fees or surprise costs, ever."
+  },
+  {
+    question: "Does OrthoStar work with our patient software (like Dentrix or OpenDental)?",
+    answer: "Yes. Our system is designed to work with all popular clinic software. We make sure the technical setup is simple."
+  },
+  {
+    question: "What support do I get if we have a technical problem?",
+    answer: "Our support team is always ready to help. If you have an issue, we will fix it quickly and without making you wait."
   }
 ];
 
