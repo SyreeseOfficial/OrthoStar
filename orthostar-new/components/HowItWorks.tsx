@@ -34,7 +34,7 @@ export const HowItWorks: React.FC = () => {
 
           {steps.map((step, index) => (
             <div key={index} className="relative flex flex-col items-center text-center group">
-              <div className="w-24 h-24 rounded-2xl bg-slate-800 border border-white/10 flex items-center justify-center text-brand-accent mb-8 relative z-10 group-hover:scale-110 group-hover:shadow-[0_0_30px_rgba(19,196,114,0.2)] transition-all duration-300">
+              <div className="w-24 h-24 rounded-2xl bg-slate-850 border border-brand-accent/30 shadow-[0_0_15px_rgba(19,196,114,0.1)] flex items-center justify-center text-brand-accent mb-8 relative z-10 group-hover:scale-110 group-hover:shadow-[0_0_30px_rgba(19,196,114,0.3)] transition-all duration-300">
                 {step.icon}
                 <div className="absolute -top-3 -right-3 w-8 h-8 rounded-full bg-slate-950 border border-white/10 flex items-center justify-center text-sm font-bold text-white">
                   {index + 1}
