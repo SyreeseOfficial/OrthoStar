@@ -20,11 +20,11 @@ export const Pricing: React.FC<PricingProps> = ({ onOpenDemo }) => {
               No long-term contracts. We earn your business every single month.
             </p>
 
-            <div className="bg-emerald-900/10 border border-brand-accent/20 rounded-xl p-6 mb-8">
+            <div className="bg-white/5 border border-brand-accent/20 rounded-xl p-6 mb-8">
               <h3 className="flex items-center gap-2 text-brand-accent font-bold mb-2">
                 <ShieldCheck /> Worried About Wasting Money? Forget It.
               </h3>
-              <p className="text-sm text-slate-300">
+              <p className="text-slate-300">
                 No contracts. No fear. Your money is safe. Get a full refund for the month if you're ever not happy. No questions asked.
               </p>
             </div>

@@ -18,7 +18,7 @@ export const Features: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <Reveal delay={0.1}>
               <div className="glass-panel p-8 rounded-2xl group hover:bg-white/5 transition-colors">
-                <div className="w-12 h-12 rounded-lg bg-red-500/10 flex items-center justify-center text-red-500 mb-6 group-hover:scale-110 transition-transform">
+                <div className="w-12 h-12 rounded-lg bg-white/5 flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform">
                   <AlertTriangle />
                 </div>
                 <h3 className="text-xl font-semibold text-white mb-3">Public Damage</h3>
@@ -30,7 +30,7 @@ export const Features: React.FC = () => {
 
             <Reveal delay={0.2}>
               <div className="glass-panel p-8 rounded-2xl group hover:bg-white/5 transition-colors">
-                <div className="w-12 h-12 rounded-lg bg-orange-500/10 flex items-center justify-center text-orange-500 mb-6 group-hover:scale-110 transition-transform">
+                <div className="w-12 h-12 rounded-lg bg-white/5 flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform">
                   <Users />
                 </div>
                 <h3 className="text-xl font-semibold text-white mb-3">Weak Marketing</h3>
@@ -42,7 +42,7 @@ export const Features: React.FC = () => {
 
             <Reveal delay={0.3}>
               <div className="glass-panel p-8 rounded-2xl group hover:bg-white/5 transition-colors">
-                <div className="w-12 h-12 rounded-lg bg-blue-500/10 flex items-center justify-center text-blue-500 mb-6 group-hover:scale-110 transition-transform">
+                <div className="w-12 h-12 rounded-lg bg-white/5 flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform">
                   <Activity />
                 </div>
                 <h3 className="text-xl font-semibold text-white mb-3">Staff Burnout</h3>

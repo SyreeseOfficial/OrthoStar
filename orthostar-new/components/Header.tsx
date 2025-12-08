@@ -35,8 +35,8 @@ export const Header: React.FC<HeaderProps> = ({ onOpenDemo }) => {
       <div className="max-w-7xl mx-auto px-4 md:px-6 flex items-center justify-between">
         {/* Logo */}
         <a href="/index.html" className="flex items-center gap-2 group">
-          <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-brand-400 to-brand-600 flex items-center justify-center text-white shadow-lg group-hover:shadow-brand-500/50 transition-all">
-            <Star size={16} fill="currentColor" className="text-white" />
+          <div className="w-8 h-8 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-brand-accent shadow-lg group-hover:shadow-brand-accent/20 transition-all">
+            <Star size={16} fill="currentColor" className="text-brand-accent" />
           </div>
           <span className="text-lg font-bold text-white tracking-tight">
             OrthoStar

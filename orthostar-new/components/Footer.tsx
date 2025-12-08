@@ -10,7 +10,7 @@ export const Footer: React.FC = () => {
           {/* Left Column: Brand, Tagline, Copyright, Address */}
           <div className="flex flex-col items-start gap-4">
             <div className="flex items-center gap-2">
-              <div className="w-6 h-6 rounded bg-brand-500 flex items-center justify-center text-white">
+              <div className="w-6 h-6 rounded bg-slate-900 border border-slate-800 flex items-center justify-center text-brand-accent">
                 <Star size={12} fill="currentColor" />
               </div>
               <span className="font-bold text-white">OrthoStar</span>
