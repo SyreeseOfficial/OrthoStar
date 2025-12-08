@@ -6,17 +6,17 @@ export const HowItWorks: React.FC = () => {
     {
       icon: <QrCode size={32} />,
       title: "Speed",
-      desc: "Start in 30 Minutes. Stop worrying about IT. We send you the QR code. You print it. Done."
+      desc: "Start in 30 minutes. We build it for you, send the QR code, and you print it. Done."
     },
     {
       icon: <Sliders size={32} />,
       title: "Lock Down Good Reviews",
-      desc: "Guarantee 5-Stars. Block bad reviews instantly. Happy patients go to Google. Unhappy patients go to a private form. Your rating stays perfect."
+      desc: "Guarantee 5-stars. We send happy patients to Google & unhappy patients to a private form, keeping your rating perfect."
     },
     {
       icon: <Share2 size={32} />,
       title: "Rank Higher",
-      desc: "Build Clinic Authority. Tired of low rankings? We check the videos and post them fast. Be the top-rated clinic online."
+      desc: "Build practice authority. We check video testimonials and post them for you, making you the top-rated practice online."
     }
   ];
 

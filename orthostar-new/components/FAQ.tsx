@@ -32,7 +32,7 @@ const faqs = [
   },
   {
     question: "Does OrthoStar work with our patient software (like Dentrix or OpenDental)?",
-    answer: "Yes. Our system is designed to work with all popular clinic software. We make sure the technical setup is simple."
+    answer: "Yes. Our system is designed to work with all popular practice software. We make sure the technical setup is simple."
   },
   {
     question: "What support do I get if we have a technical problem?",
@@ -46,7 +46,7 @@ export const FAQ: React.FC = () => {
   return (
     <section id="faq" className="py-24 bg-slate-950">
       <div className="max-w-3xl mx-auto px-4">
-        <h2 className="text-3xl font-bold text-white text-center mb-12">FAQs</h2>
+        <h2 className="text-3xl font-bold text-white text-center mb-12">FAQ</h2>
 
         <div className="space-y-4">
           {faqs.map((faq, index) => (

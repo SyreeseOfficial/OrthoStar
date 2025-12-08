@@ -23,7 +23,7 @@ export const Features: React.FC = () => {
                 </div>
                 <h3 className="text-xl font-semibold text-white mb-3">Public Damage</h3>
                 <p className="text-slate-400 leading-relaxed">
-                  Bad Reviews Are Costing You Money. One bad 1-star review on Google costs you thousands in lost new patients.
+                  Bad Reviews Are Costing You Money. One bad 1-star review on Google costs you thousands lost from new patients.
                 </p>
               </div>
             </Reveal>
@@ -58,15 +58,15 @@ export const Features: React.FC = () => {
         <div>
           <div className="flex flex-col md:flex-row justify-between items-end mb-12">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Stop Worrying. Get The Cure Today.</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Stop Losing Money From Bad Reviews</h2>
               <p className="text-slate-400 max-w-xl">
-                Finally, a simple system that blocks bad reviews and gets you video testimonials automatically.
+                Finally, a simple system that blocks bad reviews and gets you 5-star reviews and video testimonials automatically.
               </p>
             </div>
             {/* Gamified Stat */}
             <div className="mt-8 md:mt-0 glass-panel px-6 py-4 rounded-xl flex items-center gap-4 border-brand-accent/30">
               <div className="text-right">
-                <div className="text-xs text-slate-400 uppercase tracking-wider font-semibold">Video Assets Captured</div>
+                <div className="text-xs text-slate-400 uppercase tracking-wider font-semibold">Video Reviews Captured</div>
                 <div className="text-2xl font-bold text-brand-accent font-mono">
                   <Counter end={426} suffix="+" />
                 </div>
@@ -86,14 +86,14 @@ export const Features: React.FC = () => {
               <div className="p-6 rounded-2xl bg-gradient-to-br from-slate-900 to-slate-950 border border-white/5 shadow-lg shadow-black/20 hover:border-brand-accent/50 transition-all duration-300 hover:-translate-y-1">
                 <Video className="text-brand-accent mb-4" size={32} />
                 <h4 className="text-lg font-semibold text-white mb-2">Get Videos Automatically</h4>
-                <p className="text-sm text-slate-400">Get a never-ending stream of real, high-quality patient videos. We post them to grow your clinic.</p>
+                <p className="text-sm text-slate-400">Get a never-ending stream of real, high-quality patient videos. We post them to grow your practice.</p>
               </div>
             </Reveal>
 
             <Reveal delay={0.2}>
               <div className="p-6 rounded-2xl bg-gradient-to-br from-slate-900 to-slate-950 border border-white/5 shadow-lg shadow-black/20 hover:border-brand-accent/50 transition-all duration-300 hover:-translate-y-1">
                 <ShieldCheck className="text-brand-accent mb-4" size={32} />
-                <h4 className="text-lg font-semibold text-white mb-2">Block All Bad Reviews Guaranteed</h4>
+                <h4 className="text-lg font-semibold text-white mb-2">Block Bad Reviews</h4>
                 <p className="text-sm text-slate-400">We capture all negative feedback privately. 1-4 star reviews never go public.</p>
               </div>
             </Reveal>
@@ -110,7 +110,7 @@ export const Features: React.FC = () => {
               <div className="p-6 rounded-2xl bg-gradient-to-br from-slate-900 to-slate-950 border border-white/5 shadow-lg shadow-black/20 hover:border-brand-accent/50 transition-all duration-300 hover:-translate-y-1">
                 <TrendingUp className="text-brand-accent mb-4" size={32} />
                 <h4 className="text-lg font-semibold text-white mb-2">Hands-Off Growth</h4>
-                <p className="text-sm text-slate-400">No staff training needed. The system does the work for you. Just watch your clinic grow.</p>
+                <p className="text-sm text-slate-400">No staff training needed. The system does the work for you. Just watch your practice grow.</p>
               </div>
             </Reveal>
           </div>

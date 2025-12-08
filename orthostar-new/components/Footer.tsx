@@ -17,7 +17,7 @@ export const Footer: React.FC = () => {
             </div>
 
             <p className="text-slate-400 font-medium">
-              Reputation. Secured.
+              Block Bad Reviews. Get Video Testimonials.
             </p>
 
             <div className="text-sm text-slate-500 flex flex-col gap-1 mt-auto">

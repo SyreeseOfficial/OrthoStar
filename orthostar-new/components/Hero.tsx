@@ -23,19 +23,19 @@ export const Hero: React.FC<HeroProps> = ({ onOpenDemo }) => {
           </div>
 
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white tracking-tight leading-tight mb-6">
-            Bad Reviews are Killing Your Practice. <br />
+            Bad Reviews Are Killing Your Ortho Practice. <br />
             <span className="text-brand-accent text-glow">
               Stop It Now.
             </span>
           </h1>
 
           <h2 className="text-lg md:text-xl text-slate-400 max-w-2xl mb-10 leading-relaxed">
-            Our software blocks negative Google reviews while generating video testimonials & 5-star reviews from your patients.
+            Built for Orthos. Our system blocks bad reviews & generates video testimonials and 5-star reviews from happy patients.
           </h2>
 
           <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
             <Button href="https://calendly.com/syreeseofficial/short-chat" target="_blank" size="lg" className="w-full sm:w-auto">
-              Book A Live Demo
+              Book a Demo
             </Button>
             <Button variant="secondary" size="lg" className="w-full sm:w-auto" onClick={() => document.getElementById('how-it-works')?.scrollIntoView({ behavior: 'smooth' })}>
               How It Works
@@ -47,7 +47,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenDemo }) => {
             {/* Mock Logos (Using text for simplicity but styled as logos) */}
             <span className="text-sm font-semibold text-slate-300 flex items-center gap-2"><Shield size={16} /> HIPAA Compliant</span>
             <span className="text-sm font-semibold text-slate-300 flex items-center gap-2"><TrendingUp size={16} /> Google Partner</span>
-            <span className="text-sm font-semibold text-slate-300 flex items-center gap-2"><Zap size={16} /> Fast Setup</span>
+            <span className="text-sm font-semibold text-slate-300 flex items-center gap-2"><Zap size={16} /> Instant Setup</span>
           </div>
         </div>
 
@@ -63,7 +63,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenDemo }) => {
                 <div className="w-3 h-3 rounded-full bg-slate-800"></div>
               </div>
               <div className="ml-4 px-3 py-1 bg-slate-900 rounded-md border border-white/5 text-xs text-slate-500 w-64">
-                orthostar.app/clinic/demo-gate
+                orthostar.org/your-practice
               </div>
             </div>
             {/* UI Content */}
@@ -82,7 +82,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenDemo }) => {
                     {[1, 2, 3, 4, 5].map(s => <Star key={s} size={16} className="text-brand-accent fill-brand-accent" />)}
                   </div>
                   <div className="w-full p-2 bg-brand-accent text-white text-xs rounded shadow-lg mb-2">
-                    5 Stars Selected
+                    Record Video Review
                   </div>
                   <div className="text-[10px] text-slate-400">Redirecting to Google Reviews...</div>
                 </div>
@@ -93,16 +93,16 @@ export const Hero: React.FC<HeroProps> = ({ onOpenDemo }) => {
                 <div className="glass-panel p-6 rounded-xl border-l-4 border-brand-accent">
                   <h3 className="text-white font-semibold mb-2 flex items-center gap-2">
                     <span className="p-1 rounded bg-brand-accent/20 text-brand-accent"><Star size={14} fill="currentColor" /></span>
-                    5-Star Logic
+                    5-Star Reviews
                   </h3>
                   <p className="text-sm text-slate-400">
-                    Get It All. Perfect scores go straight to Google. Happy patients are asked to record a video for a reward. You win every time.
+                    Perfect reviews go straight to Google. Happy patients are asked to record a video for a reward. You win every time.
                   </p>
                 </div>
                 <div className="glass-panel p-6 rounded-xl border-l-4 border-slate-700 opacity-60">
-                  <h3 className="text-slate-200 font-semibold mb-2">1-4 Star Logic</h3>
+                  <h3 className="text-slate-200 font-semibold mb-2">1-4 Star Reviews</h3>
                   <p className="text-sm text-slate-400">
-                    Blocked. All lower ratings are instantly sent to a private form. The public never sees a bad review.
+                    Blocked. Bad reviews are sent to your private form. The public never sees a bad review.
                   </p>
                 </div>
               </div>

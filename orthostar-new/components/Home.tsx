@@ -24,9 +24,9 @@ export const Home: React.FC<HomeProps> = ({ onOpenDemo }) => {
             {/* Final CTA */}
             <section className="py-20 bg-gradient-to-b from-slate-950 to-slate-900 border-t border-white/5">
                 <div className="max-w-4xl mx-auto px-4 text-center">
-                    <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">Elevate Your Practice Today</h2>
+                    <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">Stop Losing Thousands of Dollars to Bad Reviews</h2>
                     <p className="text-slate-400 mb-8 text-lg">
-                        Join the top 1% of practices using automated reputation management.
+                        Bad ratings send patients straight to your rivals. Our system guarantees 5-star reviews and video testimonials to bring that revenue back to your practice.
                     </p>
                     <Button size="lg" href="https://calendly.com/syreeseofficial/short-chat" target="_blank" className="shadow-2xl shadow-brand-accent/20">
                         Secure Your Demo Time Slot
