@@ -9,7 +9,7 @@ interface PricingProps {
 
 export const Pricing: React.FC<PricingProps> = ({ onOpenDemo }) => {
   return (
-    <section id="pricing" className="py-24 bg-slate-900 relative border-t border-white/5">
+    <section id="pricing" className="py-32 bg-slate-900 relative border-t border-white/5">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
         <div className="flex flex-col lg:flex-row gap-16 items-center">
 

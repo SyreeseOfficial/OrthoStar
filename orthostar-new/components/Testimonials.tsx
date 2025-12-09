@@ -130,7 +130,7 @@ export const Testimonials: React.FC = () => {
   }, [handleNext]);
 
   return (
-    <section className="py-24 bg-slate-950 overflow-hidden relative">
+    <section className="py-32 bg-slate-950 overflow-hidden relative">
       <div className="max-w-7xl mx-auto px-4 md:px-6 relative group">
         <h2 className="text-3xl font-bold text-white text-center mb-16">Trusted by Top Orthodontists</h2>
 

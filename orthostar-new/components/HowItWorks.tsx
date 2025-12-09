@@ -21,7 +21,7 @@ export const HowItWorks: React.FC = () => {
   ];
 
   return (
-    <section id="how-it-works" className="py-24 bg-slate-900 border-y border-white/5">
+    <section id="how-it-works" className="py-32 bg-slate-900 border-y border-white/5">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Easy Setup In Three Steps</h2>

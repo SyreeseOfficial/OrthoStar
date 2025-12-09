@@ -5,7 +5,7 @@ import { Reveal } from './ui/Reveal';
 
 export const Features: React.FC = () => {
   return (
-    <section id="features" className="py-24 bg-slate-950 relative">
+    <section id="features" className="py-32 bg-slate-950 relative">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
 
         {/* Pain Points Bento Grid */}
