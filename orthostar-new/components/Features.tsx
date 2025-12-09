@@ -17,20 +17,22 @@ export const Features: React.FC = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <Reveal delay={0.1}>
-              <div className="glass-panel p-0 rounded-2xl group hover:bg-white/5 transition-colors overflow-hidden relative min-h-[400px]">
-                <video
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  poster="/videos/dentist-poster.jpg"
-                  className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-opacity duration-500"
-                >
-                  <source src="/videos/dentist.webm" type="video/webm" />
-                </video>
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/60 to-transparent"></div>
+              <div className="glass-panel p-8 rounded-2xl group hover:bg-white/5 transition-colors flex flex-col">
+                <div className="relative w-full rounded-xl overflow-hidden shadow-2xl shadow-black/50">
+                  <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    poster="/videos/dentist-poster.jpg"
+                    className="w-full h-auto object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500"
+                  >
+                    <source src="/videos/dentist.webm" type="video/webm" />
+                  </video>
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/40 to-transparent"></div>
+                </div>
 
-                <div className="relative z-10 p-8 h-full flex flex-col justify-end">
+                <div className="relative z-10 mt-6 flex-1 flex flex-col justify-start">
                   <h3 className="text-xl font-semibold text-white mb-3">Public Damage</h3>
                   <p className="text-slate-400 leading-relaxed">
                     Bad Reviews Are Costing You Money. One bad 1-star review on Google costs you thousands lost from new patients.
@@ -40,20 +42,22 @@ export const Features: React.FC = () => {
             </Reveal>
 
             <Reveal delay={0.2}>
-              <div className="glass-panel p-0 rounded-2xl group hover:bg-white/5 transition-colors overflow-hidden relative min-h-[400px]">
-                <video
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  poster="/videos/camera-poster.jpg"
-                  className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-opacity duration-500"
-                >
-                  <source src="/videos/camera.webm" type="video/webm" />
-                </video>
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/60 to-transparent"></div>
+              <div className="glass-panel p-8 rounded-2xl group hover:bg-white/5 transition-colors flex flex-col">
+                <div className="relative w-full rounded-xl overflow-hidden shadow-2xl shadow-black/50">
+                  <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    poster="/videos/camera-poster.jpg"
+                    className="w-full h-auto object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500"
+                  >
+                    <source src="/videos/camera.webm" type="video/webm" />
+                  </video>
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/40 to-transparent"></div>
+                </div>
 
-                <div className="relative z-10 p-8 h-full flex flex-col justify-end">
+                <div className="relative z-10 mt-6 flex-1 flex flex-col justify-start">
                   <h3 className="text-xl font-semibold text-white mb-3">Weak Marketing</h3>
                   <p className="text-slate-400 leading-relaxed">
                     No Videos, No Growth. You have zero real video proof from happy patients. Your marketing looks weak and fake.
@@ -63,20 +67,22 @@ export const Features: React.FC = () => {
             </Reveal>
 
             <Reveal delay={0.3}>
-              <div className="glass-panel p-0 rounded-2xl group hover:bg-white/5 transition-colors overflow-hidden relative min-h-[400px]">
-                <video
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  poster="/videos/employee-poster.jpg"
-                  className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-opacity duration-500"
-                >
-                  <source src="/videos/employee.webm" type="video/webm" />
-                </video>
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/60 to-transparent"></div>
+              <div className="glass-panel p-8 rounded-2xl group hover:bg-white/5 transition-colors flex flex-col">
+                <div className="relative w-full rounded-xl overflow-hidden shadow-2xl shadow-black/50">
+                  <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    poster="/videos/employee-poster.jpg"
+                    className="w-full h-auto object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500"
+                  >
+                    <source src="/videos/employee.webm" type="video/webm" />
+                  </video>
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/40 to-transparent"></div>
+                </div>
 
-                <div className="relative z-10 p-8 h-full flex flex-col justify-end">
+                <div className="relative z-10 mt-6 flex-1 flex flex-col justify-start">
                   <h3 className="text-xl font-semibold text-white mb-3">Staff Burnout</h3>
                   <p className="text-slate-400 leading-relaxed">
                     Staff Time is Wasted. Your team wastes time chasing reviews. They should be focused on patient care, not busy work.
