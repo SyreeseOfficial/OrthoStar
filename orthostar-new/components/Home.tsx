@@ -1,5 +1,6 @@
 import React from 'react';
 import { Hero } from '../components/Hero';
+import { TrustBar } from '../components/TrustBar';
 import { Features } from '../components/Features';
 import { HowItWorks } from '../components/HowItWorks';
 import { Testimonials } from '../components/Testimonials';
@@ -15,6 +16,7 @@ export const Home: React.FC<HomeProps> = ({ onOpenDemo }) => {
     return (
         <main>
             <Hero onOpenDemo={onOpenDemo} />
+            <TrustBar />
             <Features />
             <HowItWorks />
             <Testimonials />
