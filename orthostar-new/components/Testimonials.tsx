@@ -5,7 +5,7 @@ const testimonials = [
   {
     name: "Dr. Sarah Miller",
     clinic: "Miller Orthodontics",
-    text: "We got 5-star reviews the first week. Then we started gettings lots of video testimonials.",
+    text: "We got 5-star reviews the first week. Then we started getting lots of video testimonials.",
     location: "Austin, TX"
   },
   {
@@ -24,18 +24,18 @@ const testimonials = [
     name: "Dr. Andrew Nguyen",
     clinic: "Modern Smile Dental",
     text: "The staff used to spend an hour a week manually asking for reviews. Now it’s completely automated. Our team can focus on patients, not marketing tasks.",
-    location: "Seattle, WA"
+    location: "Los Angeles, CA"
   },
   {
     name: "Dr. Emily Carter",
     clinic: "Apex Ortho Group",
-    text: "As a healthcare provider, patient privacy is paramount. OrthoStar’s system clearly respects HIPAA guidelines by separating health data from marketing data. That compliance assurance is invaluable.",
+    text: "We were getting a lot of negative reviews, but OrthoStar made it easy to handle them. Now we get mostly 5-star reviews.",
     location: "Denver, CO"
   },
   {
     name: "Dr. Omar Hassan",
     clinic: "Golden Coast Ortho",
-    text: "We had an issue integrating our PMS, and their support team responded immediately and fixed it on a Sunday morning. That level of dedication is rare in SaaS.",
+    text: "We had a technical issue, and their support team responded immediately and fixed it on a Sunday morning. That level of dedication is rare in this industry!",
     location: "San Diego, CA"
   },
   {
@@ -47,7 +47,7 @@ const testimonials = [
   {
     name: "David Lee (Practice Mgr)",
     clinic: "Pacific Smiles",
-    text: "It handles service recovery seamlessly. Negative feedback goes right to my inbox so I can call the patient personally and turn a bad experience into a 5-star one.",
+    text: "It handles bad reviews perfectly. Negative feedback goes right to my inbox so I can call the patient personally and turn a bad experience into a 5-star one.",
     location: "San Francisco, CA"
   }
 ];
