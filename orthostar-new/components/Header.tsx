@@ -49,11 +49,12 @@ export const Header: React.FC<HeaderProps> = ({ onOpenDemo }) => {
             <a
               key={link.label}
               href={link.href}
-              className="text-sm font-medium text-slate-400 hover:text-white transition-colors"
+              className="text-sm font-medium text-slate-400 hover:text-brand-accent transition-colors"
             >
               {link.label}
             </a>
           ))}
+
         </nav>
 
         {/* Desktop CTA */}
@@ -79,7 +80,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenDemo }) => {
             <a
               key={link.label}
               href={link.href}
-              className="text-sm font-medium text-slate-400 hover:text-white py-2 block"
+              className="text-sm font-medium text-slate-400 hover:text-brand-accent py-2 block"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               {link.label}

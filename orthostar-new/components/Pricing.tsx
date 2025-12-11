@@ -36,10 +36,10 @@ export const Pricing: React.FC<PricingProps> = ({ onOpenDemo }) => {
               <div className="relative p-1 rounded-2xl bg-gradient-to-b from-white/10 to-transparent transition-transform hover:-translate-y-1 duration-500">
                 <div className="bg-gradient-to-b from-slate-900 to-slate-950 rounded-xl p-8 md:p-12 relative overflow-hidden shadow-2xl shadow-black/40">
                   <div className="absolute top-0 right-0 p-4">
-                    <span className="bg-brand-accent text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Price Increase in 2026</span>
+                    <span className="bg-brand-accent text-white text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-wider">Price Increase in 2026</span>
                   </div>
 
-                  <h3 className="text-xl font-medium text-slate-400 mb-2">Save Thousands In Lost Patients For Only</h3>
+                  <h3 className="text-xl font-medium text-slate-400 mb-2 mt-6">Save Thousands In Lost Patients For Only</h3>
                   <div className="flex items-baseline gap-1 mb-8">
                     <span className="text-5xl font-bold text-white">$299</span>
                     <span className="text-slate-500">/ month</span>

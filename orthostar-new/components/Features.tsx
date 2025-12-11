@@ -35,7 +35,7 @@ export const Features: React.FC = () => {
                 <div className="relative z-10 mt-6 flex-1 flex flex-col justify-start">
                   <h3 className="text-xl font-semibold text-white mb-3">Public Damage</h3>
                   <p className="text-slate-400 leading-relaxed">
-                    Bad Reviews Are Costing You Money. One bad 1-star review on Google costs you thousands lost from new patients.
+                    Bad reviews are costing you money. One bad 1-star review on Google costs you thousands lost from new patients.
                   </p>
                 </div>
               </div>
@@ -60,7 +60,7 @@ export const Features: React.FC = () => {
                 <div className="relative z-10 mt-6 flex-1 flex flex-col justify-start">
                   <h3 className="text-xl font-semibold text-white mb-3">Weak Marketing</h3>
                   <p className="text-slate-400 leading-relaxed">
-                    No Videos, No Growth. You have zero real video proof from happy patients. Your marketing looks weak and fake.
+                    No videos, no growth. You have zero real video proof from happy patients. Your marketing looks weak and fake.
                   </p>
                 </div>
               </div>
@@ -85,7 +85,7 @@ export const Features: React.FC = () => {
                 <div className="relative z-10 mt-6 flex-1 flex flex-col justify-start">
                   <h3 className="text-xl font-semibold text-white mb-3">Staff Burnout</h3>
                   <p className="text-slate-400 leading-relaxed">
-                    Staff Time is Wasted. Your team wastes time chasing reviews. They should be focused on patient care, not busy work.
+                    Staff time is wasted. Your team wastes time chasing reviews. They should be focused on patient care, not busy work.
                   </p>
                 </div>
               </div>
