@@ -3,6 +3,10 @@ import { ChevronDown, ChevronUp } from 'lucide-react';
 
 const faqs = [
   {
+    question: "How do I cancel or get a refund?",
+    answer: "Email us your cancel / refund request and we'll process it right away. Super easy! No hard feelings."
+  },
+  {
     question: "Will this get me into HIPAA trouble?",
     answer: "No. We only use contact info, not health details. Your patient data is always private and safe."
   },
@@ -36,7 +40,7 @@ const faqs = [
   },
   {
     question: "What support do I get if we have a technical problem?",
-    answer: "Our support team is always ready to help. If you have an issue, we will fix it quickly and without making you wait."
+    answer: "You'll get email access and a phone number you can call or text for super fast support."
   }
 ];
 
