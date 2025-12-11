@@ -5,7 +5,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>How was your experience? - OrthoStar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/client.css">
+    <style>
+        body {
+            background-color: #08090A;
+            color: #f8fafc;
+            font-family: 'Inter', sans-serif;
+        }
+
+        h1 {
+            color: #ffffff;
+        }
+
+        p {
+            color: #94a3b8;
+            /* Slate-400 for primary text elements like p */
+        }
+
+        a {
+            color: #94a3b8;
+            /* Secondary link color */
+            text-decoration: none;
+        }
+
+        /* Override client.css .btn defaults if needed */
+        .btn {
+            border-radius: 8px;
+            padding: 16px 32px;
+            /* Matching main CTA padding */
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background-color: #13C472;
+            color: #ffffff !important;
+            /* Force white text */
+            box-shadow: 0 0 20px rgba(19, 196, 114, 0.3);
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #10b981;
+            box-shadow: 0 0 30px rgba(19, 196, 114, 0.5);
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background-color: rgba(255, 255, 255, 0.05);
+            color: #ffffff !important;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(4px);
+        }
+
+        .btn-secondary:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+    </style>
 </head>
 
 <body>
