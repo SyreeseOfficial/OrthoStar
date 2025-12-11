@@ -19,7 +19,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenDemo }) => {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-accent opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-brand-accent"></span>
             </span>
-            OrthoStar 3.0 Now Available
+            OrthoStar 2.0 Now Available
           </div>
 
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white tracking-tight leading-tight mb-6">
@@ -36,9 +36,6 @@ export const Hero: React.FC<HeroProps> = ({ onOpenDemo }) => {
           <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
             <Button href="https://calendly.com/syreeseofficial/short-chat" target="_blank" size="lg" className="w-full sm:w-auto">
               Book a Demo
-            </Button>
-            <Button variant="secondary" size="lg" className="w-full sm:w-auto" onClick={() => document.getElementById('how-it-works')?.scrollIntoView({ behavior: 'smooth' })}>
-              How It Works
             </Button>
           </div>
 
