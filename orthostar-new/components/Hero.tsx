@@ -45,7 +45,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenDemo }) => {
         </div>
       </div>
       {/* UI Content */}
-      <div className="flex-1 bg-slate-900 flex items-center justify-center p-8 md:p-12">
+      <div className="flex-1 bg-slate-900 flex items-center justify-center p-8 md:p-12 min-h-[600px]">
         {children}
       </div>
     </div>
