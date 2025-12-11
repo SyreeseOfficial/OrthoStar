@@ -104,7 +104,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenDemo }) => {
               spaceBetween={30}
               slidesPerView={1}
               loop={true}
-              autoplay={{ delay: 8000, disableOnInteraction: false }}
+              autoplay={{ delay: 10000, disableOnInteraction: false }}
               onSwiper={(swiper) => {
                 // @ts-ignore
                 swiperRef.current = swiper;
@@ -113,7 +113,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenDemo }) => {
               className="rounded-xl shadow-2xl z-10"
               autoHeight={true}
             >
-              {/* SLIDE 1: Existing Content */}
+              {/* SLIDE 1: Review Gateway */}
               <SwiperSlide className="h-full">
                 <BrowserFrame>
                   <div className="w-full grid md:grid-cols-2 gap-12 items-center">
@@ -122,35 +122,42 @@ export const Hero: React.FC<HeroProps> = ({ onOpenDemo }) => {
                       <div className="h-[32px] w-[3px] bg-slate-800 absolute -left-[10px] top-[72px] rounded-l-lg"></div>
                       <div className="h-[46px] w-[3px] bg-slate-800 absolute -left-[10px] top-[124px] rounded-l-lg"></div>
                       <div className="h-[46px] w-[3px] bg-slate-800 absolute -right-[10px] top-[142px] rounded-r-lg"></div>
+
+                      {/* Phone Screen Content */}
                       <div className="flex-1 bg-white flex flex-col items-center justify-center p-4 text-center">
-                        <div className="w-12 h-12 bg-slate-100 rounded-full mb-4 flex items-center justify-center">
-                          <span className="font-bold text-slate-800">Max</span>
+                        <div className="w-16 h-16 bg-slate-200 rounded-full mb-4 flex items-center justify-center">
+                          <span className="font-bold text-slate-800 text-lg">Max</span>
                         </div>
-                        <h4 className="text-slate-800 font-bold text-sm mb-2">How was your visit?</h4>
-                        <div className="flex gap-1 mb-6">
-                          {[1, 2, 3, 4, 5].map(s => <Star key={s} size={16} className="text-brand-accent fill-brand-accent" />)}
+                        <h4 className="text-slate-900 font-bold text-base mb-3">How was your visit?</h4>
+                        <div className="flex gap-1.5 mb-6">
+                          {[1, 2, 3, 4, 5].map(s => <Star key={s} size={24} className="text-brand-accent fill-brand-accent" />)}
                         </div>
-                        <div className="w-full p-2 bg-brand-accent text-white text-xs rounded shadow-lg mb-2">
-                          Record Video Review
+
+                        <div className="w-full space-y-2">
+                          <div className="w-full py-2.5 bg-brand-accent text-white font-medium text-xs rounded-lg shadow-sm">
+                            Great (5 Stars)
+                          </div>
+                          <div className="w-full py-2.5 bg-slate-700 text-white font-medium text-xs rounded-lg shadow-sm">
+                            Needs Work (1-4 Stars)
+                          </div>
                         </div>
-                        <div className="text-[10px] text-slate-400">Redirecting to Google Reviews...</div>
                       </div>
                     </div>
 
                     {/* Right: Explainer */}
                     <div className="space-y-6 text-left">
-                      <div className="glass-panel p-6 rounded-xl border-l-4 border-brand-accent">
+                      <div className="glass-panel p-6 rounded-xl border-l-4 border-brand-accent bg-slate-800/50 backdrop-blur-sm">
                         <h3 className="text-white font-semibold mb-2 flex items-center gap-2">
                           <span className="p-1 rounded bg-brand-accent/20 text-brand-accent"><Star size={14} fill="currentColor" /></span>
                           5-Star Reviews
                         </h3>
-                        <p className="text-sm text-slate-400">
+                        <p className="text-sm text-slate-400 leading-relaxed">
                           Perfect reviews go straight to Google. Happy patients are asked to record a video for a reward. You win every time.
                         </p>
                       </div>
-                      <div className="glass-panel p-6 rounded-xl border-l-4 border-slate-700 opacity-60">
+                      <div className="glass-panel p-6 rounded-xl border-l-4 border-slate-700 bg-slate-800/30 backdrop-blur-sm">
                         <h3 className="text-slate-200 font-semibold mb-2">1-4 Star Reviews</h3>
-                        <p className="text-sm text-slate-400">
+                        <p className="text-sm text-slate-400 leading-relaxed">
                           Blocked. Bad reviews are sent to your private form. The public never sees a bad review.
                         </p>
                       </div>
@@ -159,41 +166,103 @@ export const Hero: React.FC<HeroProps> = ({ onOpenDemo }) => {
                 </BrowserFrame>
               </SwiperSlide>
 
-              {/* SLIDE 2: Placeholder */}
+              {/* SLIDE 2: Private Feedback Form */}
               <SwiperSlide className="h-full">
-                <BrowserFrame url="orthostar.org/block-bad-reviews">
-                  <div className="flex flex-col items-center justify-center py-20 text-center min-h-[400px]">
-                    <div className="w-20 h-20 rounded-full bg-slate-800 border border-slate-700 flex items-center justify-center mb-6">
-                      <Shield className="w-10 h-10 text-brand-accent opacity-50" />
+                <BrowserFrame url="orthostar.org/feedback">
+                  <div className="w-full max-w-lg mx-auto py-8">
+                    {/* Stars Outline */}
+                    <div className="flex justify-center gap-2 mb-8">
+                      {[1, 2, 3, 4, 5].map(s => <Star key={s} size={32} className="text-slate-600" strokeWidth={1.5} />)}
                     </div>
-                    <h3 className="text-2xl font-bold text-white mb-2">SLIDE 2: Blockade</h3>
-                    <p className="text-slate-500 font-medium">(Content Coming Soon)</p>
+
+                    <div className="space-y-6">
+                      <div>
+                        <label className="block text-white font-medium mb-2 text-sm flex items-center gap-2">
+                          Your feedback is welcome. Please submit it below. <span className="text-slate-600 text-[10px] border border-slate-700 px-1 rounded-full">●</span>
+                        </label>
+                        <div className="relative">
+                          <textarea
+                            className="w-full bg-slate-800/50 border border-slate-700 rounded-lg p-3 text-slate-300 text-sm focus:ring-1 focus:ring-brand-accent focus:border-brand-accent outline-none resize-none h-24 placeholder:text-slate-600"
+                            placeholder="The food was tasty. The service was fast..."
+                            readOnly
+                          ></textarea>
+                          <div className="absolute bottom-2 right-2 flex space-x-0.5">
+                            <div className="w-1.5 h-1.5 bg-slate-600 rounded-full opacity-50"></div>
+                            <div className="w-1.5 h-1.5 bg-slate-600 rounded-full opacity-50"></div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div>
+                        <label className="block text-white font-medium mb-2 text-sm">
+                          Leave your email below if you'd like someone to contact you.
+                        </label>
+                        <input
+                          type="text"
+                          className="w-full bg-slate-800/50 border border-slate-700 rounded-lg p-3 text-slate-300 text-sm focus:ring-1 focus:ring-brand-accent focus:border-brand-accent outline-none placeholder:text-slate-600"
+                          placeholder="Email"
+                          readOnly
+                        />
+                      </div>
+
+                      <button className="bg-brand-accent hover:bg-brand-accent/90 text-white font-medium py-2 px-4 rounded-lg text-sm flex items-center gap-2 transition-colors">
+                        Submit <ChevronRight size={14} />
+                      </button>
+                    </div>
                   </div>
                 </BrowserFrame>
               </SwiperSlide>
 
-              {/* SLIDE 3: Placeholder */}
+              {/* SLIDE 3: Thank You / Action */}
               <SwiperSlide className="h-full">
-                <BrowserFrame url="orthostar.org/asset-generation">
-                  <div className="flex flex-col items-center justify-center py-20 text-center min-h-[400px]">
-                    <div className="w-20 h-20 rounded-full bg-slate-800 border border-slate-700 flex items-center justify-center mb-6">
-                      <Zap className="w-10 h-10 text-brand-accent opacity-50" />
+                <BrowserFrame url="orthostar.org/thank-you">
+                  <div className="flex flex-col items-center justify-center py-16 text-center max-w-xl mx-auto">
+                    <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Thank you!</h2>
+                    <p className="text-slate-300 text-lg mb-10">
+                      We're thrilled you had a 5-star experience.
+                    </p>
+
+                    <div className="w-full space-y-4 max-w-md">
+                      <button className="w-full bg-brand-accent hover:bg-brand-accent/90 text-white font-bold py-4 px-6 rounded-lg shadow-lg hover:shadow-brand-accent/20 transition-all transform hover:-translate-y-0.5">
+                        Leave a Google Review
+                      </button>
+
+                      <button className="w-full bg-slate-800 hover:bg-slate-700 border border-slate-700 text-white font-semibold py-4 px-6 rounded-lg transition-all">
+                        Submit a 10 Second Video Testimonial (Get Rewarded)
+                      </button>
                     </div>
-                    <h3 className="text-2xl font-bold text-white mb-2">SLIDE 3: Asset Generation</h3>
-                    <p className="text-slate-500 font-medium">(Content Coming Soon)</p>
                   </div>
                 </BrowserFrame>
               </SwiperSlide>
 
-              {/* SLIDE 4: Placeholder */}
+              {/* SLIDE 4: ROI Impact */}
               <SwiperSlide className="h-full">
                 <BrowserFrame url="orthostar.org/financial-impact">
-                  <div className="flex flex-col items-center justify-center py-20 text-center min-h-[400px]">
-                    <div className="w-20 h-20 rounded-full bg-slate-800 border border-slate-700 flex items-center justify-center mb-6">
-                      <TrendingUp className="w-10 h-10 text-brand-accent opacity-50" />
+                  <div className="flex flex-col h-full py-4 max-w-3xl mx-auto">
+                    <div className="text-center mb-10">
+                      <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
+                        Is $299 Worth $10,000 in Revenue?
+                      </h2>
+                      <p className="text-slate-400 text-sm md:text-base max-w-xl mx-auto leading-relaxed">
+                        A single 1-star review can cost you thousands in lost patient revenue. Imagine how many customers you are losing due to bad reviews.
+                      </p>
                     </div>
-                    <h3 className="text-2xl font-bold text-white mb-2">SLIDE 4: Financial Impact</h3>
-                    <p className="text-slate-500 font-medium">(Content Coming Soon)</p>
+
+                    <div className="grid md:grid-cols-2 gap-6 w-full">
+                      {/* Good Loop */}
+                      <div className="relative p-6 rounded-2xl border border-brand-accent bg-slate-900/50 flex items-center justify-center">
+                        <p className="text-white font-semibold text-center text-sm md:text-base leading-relaxed">
+                          Good reviews lead to more patients which leads to more money in your pocket.
+                        </p>
+                      </div>
+
+                      {/* Bad Loop */}
+                      <div className="relative p-6 rounded-2xl border border-slate-700 bg-slate-900/50 flex items-center justify-center">
+                        <p className="text-white font-semibold text-center text-sm md:text-base leading-relaxed">
+                          Bad reviews lead to patients going to your competitors and less money in your pocket.
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </BrowserFrame>
               </SwiperSlide>
