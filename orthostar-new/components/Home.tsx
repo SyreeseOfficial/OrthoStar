@@ -1,5 +1,6 @@
 import React from 'react';
 import { Hero } from '../components/Hero';
+import { BentoGrid } from '../components/BentoGrid';
 import { TrustBar } from '../components/TrustBar';
 import { Features } from '../components/Features';
 import { HowItWorks } from '../components/HowItWorks';
@@ -16,6 +17,7 @@ export const Home: React.FC<HomeProps> = ({ onOpenDemo }) => {
     return (
         <main>
             <Hero onOpenDemo={onOpenDemo} />
+            <BentoGrid />
             <TrustBar />
             <Features />
             <HowItWorks />
